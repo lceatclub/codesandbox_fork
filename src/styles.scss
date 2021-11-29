@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+// Colours
+
+$eatclub-orange: #ff5a00;
+$grey40: #999999;
+$light-grey: #bebebe;
+
+// Nomicon variables
+
+$nomicon-minus-filled: "\e923";
+$nomicon-plus-filled: "\e92c";
+$nomicon-minus: "\e924";
+$nomicon-plus: "\e959";
+
+// Component styles
+
+.plus-minus-round-button {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  color: $light-grey;
+}
+
+.minus-btn {
+  color: $grey40;
+
+  &:hover::before {
+    content: $nomicon-minus-filled;
+  }
+}
+
+.add-btn {
+  color: $eatclub-orange;
+
+  &:hover::before {
+    content: $nomicon-plus-filled;
+  }
+}
